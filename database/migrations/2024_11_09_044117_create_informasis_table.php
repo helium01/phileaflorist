@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('informasis', function (Blueprint $table) {
             $table->id();
+            $table->string("kode_informasi",15);
+            $table->date("tanggal");
+            $table->string("informasi");
+            $table->text("detail_informasi");
             $table->timestamps();
         });
     }

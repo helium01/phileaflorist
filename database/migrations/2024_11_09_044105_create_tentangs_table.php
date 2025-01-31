@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('tentangs', function (Blueprint $table) {
             $table->id();
+            $table->string("kontak",15);
+            $table->string("instagram");
+            $table->string("nama_toko");
+            $table->text("alamat");
+            $table->text("keterangan");
+            $table->text("filosofi");
             $table->timestamps();
         });
     }
